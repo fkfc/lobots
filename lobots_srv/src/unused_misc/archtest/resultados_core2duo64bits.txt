@@ -1,0 +1,6 @@
+float = 32 bits
+int = 32 bits
+long = 64 bits
+double = 64 bits
+long double = 128 bits
+Arquitetura Little Endian

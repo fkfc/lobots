@@ -1,0 +1,3 @@
+lobots server / lobots client
+2009 - 2015 Felipe Kermentz Ferraz Costa (felipekfcosta@gmail.com)
+Licensed under the GNU General Public License

@@ -1,0 +1,281 @@
+<window>
+  
+  <name>DemonstrationWindow</name>
+  <size>500,360</size>
+  <position>10,10</position>
+  <style>
+    <backgroundcolor>255 , 0 , 0</backgroundcolor>
+    <border>
+      <radius>20</radius>
+      <width>5</width>
+      <color>0,0,0</color>
+    </border>
+    <selected>
+      <backgroundcolor>255,128,128</backgroundcolor>
+      <border>
+	<color>127,127,127</color>
+      </border>
+    </selected>
+  </style>
+  
+  <widget>
+    <name>LabelDemo1</name>
+    <type>label</type>
+    <position>5,8</position>
+    <text>Test Label</text>
+    <style>
+      <font>
+	<color>0,0,128</color>
+      </font>
+    </style>
+  </widget>
+  
+  <widget>
+    <name>ScrollBar1</name>
+    <type>scrollbar</type>
+    <orientation>vertical</orientation>
+    <size>20,100</size>
+    <position>125,15</position>
+  </widget>
+ 
+  
+  
+  <widget>
+    <name>DemoListBox1</name>
+    <type>listbox</type>
+    <size>115,100</size>
+    <position>5,15</position>
+    <content>
+      <item>Item 1</item>
+      <item>Item 2</item>
+      <item>Item 3</item>
+      <item>Item 4</item>
+      <item>Item 5</item>
+      <item>Item 6</item>
+      <item>Item 7</item>
+      <item>Item 8</item>
+      <item>Item 9</item>
+      <item>Item 10</item>
+      <item>Item 11</item>
+      <item>Item 12</item>
+      <item>Item 13</item>
+      <item>Item 14</item>
+      <item>Item 15</item>
+      <item>Item 16</item>
+      <item>Item 17</item>
+      <item>Item 18</item>
+      <item>Item 19</item>
+      <item>Item 20</item>
+      
+    </content>
+    <scrollbar>ScrollBar1</scrollbar>
+  </widget>
+  
+  
+  <widget>
+    <name>SV1_HScrollBar</name>
+    <type>scrollbar</type>
+    <orientation>horizontal</orientation>
+    <size>120,20</size>
+    <position>150,140</position>
+  </widget>
+  
+  <widget>
+    <name>SV1_VScrollBar</name>
+    <type>scrollbar</type>
+    <orientation>vertical</orientation>
+    <size>20,120</size>
+    <position>275,15</position>
+  </widget>
+  
+  <widget>
+    <name>ScrollableView1</name>
+    <type>scrollableview</type>
+    <size>120,120</size>
+    <position>150,15</position>
+    <draggable>false</draggable>
+    <scrollbar>SV1_HScrollBar, SV1_VScrollBar</scrollbar>
+    
+    <widget>
+      <type>button</type>
+      <size>50,50</size>
+      <position>1,1</position>
+      <text>Botao1</text>
+    </widget>
+    
+    <widget>
+      <type>button</type>
+      <size>50,50</size>
+      <position>55,1</position>
+      <text>Botao2</text>
+    </widget>
+    
+    <widget>
+      <type>button</type>
+      <size>50,50</size>
+      <position>110,1</position>
+      <text>Botao3</text>
+    </widget>
+    
+    <widget>
+      <type>button</type>
+      <size>50,50</size>
+      <position>1,55</position>
+      <text>Botao4</text>
+    </widget>
+    
+    <widget>
+      <type>button</type>
+      <size>50,50</size>
+      <position>1,110</position>
+      <text>Botao5</text>
+    </widget>
+    
+  </widget>
+  
+  <widget>
+    <name>ScrollBar2</name>
+    <type>scrollbar</type>
+    <orientation>horizontal</orientation>
+    <size>100,20</size>
+    <position>20,315</position>
+    <style>
+      <backgroundcolor>255,255,0</backgroundcolor>
+      <rail>
+	<backgroundcolor>255,0,255</backgroundcolor>
+      </rail>
+      <button>
+	<backgroundcolor>80,80,80</backgroundcolor>
+	<selected>
+	  <offset>0,0</offset>
+	</selected>
+      </button>
+      <cursor>
+	<backgroundcolor>0,0,0</backgroundcolor>
+      </cursor>
+    </style>
+  </widget>
+  
+  <widget>
+    <name>TextBoxLong</name>
+    <type>textbox</type>
+    <size>100,20</size>
+    <position>20,290</position>
+    <text>Very long scrollable text more text here and more</text>
+    <scrollbar>ScrollBar2</scrollbar>
+  </widget>
+    
+  <widget>
+    <name>ButtonDemo1</name>
+    <type>button</type>
+    <size>140,15</size>
+    <position>5,120</position>
+    <text>Test Button</text>
+    <style>
+      <backgroundcolor>0,255,0</backgroundcolor>
+      <border>
+	<radius>0</radius>
+	<color>0,0,0</color>
+      </border>
+      <shadow>
+	<color>0,0,0</color>
+	<offset>4,4</offset>
+      </shadow>
+      <selected>
+	<backgroundcolor>0,128,0</backgroundcolor>
+	<offset>4,4</offset>
+	<font>
+	  <color>255,255,255</color>
+	</font>
+      </selected>
+      <hover>
+	<backgroundcolor>200,255,200</backgroundcolor>
+      </hover>
+    </style>
+  </widget>
+  
+  <widget>
+    <name>BrickButton1</name>
+    <type>brickbutton</type>
+    <size>60,60</size>
+    <position>5,140</position>
+  </widget>
+  
+  
+  <widget>
+    <name>NestedWindow1</name>
+    <type>window</type>
+    <size>200,130</size>
+    <position>140,190</position>
+    <style>
+      <backgroundcolor>100,100,255</backgroundcolor>
+      <selected>
+	<backgroundcolor>200,200,255</backgroundcolor>
+      </selected>
+    </style>
+    
+    <widget>
+      <name>Button1NestedWindow1</name>
+      <type>draggablebutton</type>
+      <size>140,15</size>
+      <position>10,10</position>
+      <text>Button Nested</text>
+    </widget>
+    <widget>
+      <name>Button2NestedWindow1</name>
+      <type>button</type>
+      <size>140,15</size>
+      <position>10,40</position>
+      <text>Button long text cropped very long text</text>
+    </widget>
+    <widget>
+      <name>Label1NestedWindow1</name>
+      <type>label</type>
+      <position>10,70</position>
+      <text>This is a nested window</text>
+    </widget>
+    
+  </widget>
+  
+  
+  <widget>
+    <name>SI_HScrollBar</name>
+    <type>scrollbar</type>
+    <orientation>horizontal</orientation>
+    <size>100,20</size>
+    <position>340,115</position>
+  </widget>
+  
+  <widget>
+    <name>SI_VScrollBar</name>
+    <type>scrollbar</type>
+    <orientation>vertical</orientation>
+    <size>20,100</size>
+    <position>445,10</position>
+  </widget>
+  
+  
+  <widget>
+    <type>scrollableview</type>
+    <name>ScrollableImage</name>
+    <size>100,100</size>
+    <position>340, 10</position>
+    
+    <widget>
+        <type>canvas</type>
+        <size>150,150</size>
+        <position>5, 5</position>
+        <image>
+            <file>imagem.bmp</file>
+            <pixel>10, 10, 0, 0, 255, 127</pixel>
+        </image>
+    </widget>
+    
+    
+    <scrollbar>SI_HScrollBar, SI_VScrollBar</scrollbar>
+  
+  </widget>
+  
+  
+</window>
+
