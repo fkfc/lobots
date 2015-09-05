@@ -1,0 +1,10 @@
+pecas\select.bri
+pecas\openbox.bri
+pecas\disk1.bri
+pecas\disk2.bri
+pecas\disk3.bri
+pecas\seta.bri
+pecas\delete.bri
+pecas\accept.bri
+pecas\new.bri
+pecas\connect.bri

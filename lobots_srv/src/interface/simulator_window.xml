@@ -1,0 +1,107 @@
+<window>
+  
+  <name>SimulatorWindow</name>
+  <size>150,180</size>
+  <position>30,130</position>
+  
+  <widget>
+    <name>LabelSW1</name>
+    <type>label</type>
+    <position>5,9</position>
+    <text>Robots:</text>
+  </widget>
+  
+  <widget>
+    <name>ButtonSWMinimize</name>
+    <type>button</type>
+    <position>135,2</position>
+    <size>12,12</size>
+    <text>-</text>
+    <style>
+      <border>
+	<radius>6</radius>
+      </border>
+      <shadow>
+	<offset>1,1</offset>
+      </shadow>
+      
+      <hover>
+	<border>
+	  <color>220,50,50</color>
+	</border>
+	<shadow>
+	  <color>220,150,150</color>
+	</shadow>
+	<font>
+	  <color>220,50,50</color>
+	</font>
+      </hover>
+      
+      <selected>
+	<offset>1,1</offset>
+	<border>
+	  <color>220,50,50</color>
+	</border>
+	<shadow>
+	  <color>220,150,150</color>
+	</shadow>
+	<font>
+	  <color>220,50,50</color>
+	</font>
+      </selected>
+      
+    </style>
+  </widget>
+  
+  <widget>
+    <name>ScrollBarRobotList</name>
+    <type>scrollbar</type>
+    <orientation>vertical</orientation>
+    <size>20,65</size>
+    <position>125,17</position>
+  </widget>
+  
+  
+  <widget>
+    <name>RoboList</name>
+    <type>listbox</type>
+    <size>115,65</size>
+    <position>5,17</position>
+    <scrollbar>ScrollBarRobotList</scrollbar>
+  </widget>
+ 
+  
+  <widget>
+    <name>ButtonAddRobot</name>
+    <type>button</type>
+    <size>140,15</size>
+    <position>5,87</position>
+    <text>Add robot</text>
+  </widget>
+  
+  <widget>
+    <name>ButtonAddWaypoint</name>
+    <type>button</type>
+    <size>140,15</size>
+    <position>5,109</position>
+    <text>Add waypoint</text>
+  </widget>
+  
+  <widget>
+    <name>ButtonSimStartStop</name>
+    <type>button</type>
+    <size>140,15</size>
+    <position>5,131</position>
+    <text>Start/Stop</text>
+  </widget>
+  
+  <widget>
+    <name>ButtonQuit</name>
+    <type>button</type>
+    <size>140,15</size>
+    <position>5,157</position>
+    <text>Quit</text>
+  </widget>
+  
+</window>
+

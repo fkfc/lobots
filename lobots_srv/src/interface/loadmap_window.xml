@@ -1,0 +1,63 @@
+<window>
+    <name>WLoad</name>
+    <size>300, 200</size>
+    <position>300, 250</position>
+   
+     
+    <widget>
+        <name>Wload_ButtonClose</name>
+        <type>button</type>
+        <size>70, 30</size>
+        <position>10, 150</position>
+        <text>Close</text>
+    </widget>
+    
+    <widget>
+        <name>Wload_ButtonStep</name>
+        <type>button</type>
+        <size>115, 30</size>
+        <position>110, 150</position>
+        <text>Step-by-step</text>
+    </widget>
+    
+    <widget>
+        <name>Wload_ButtonLoad</name>
+        <type>button</type>
+        <size>50, 30</size>
+        <position>235, 150</position>
+        <text>Load</text>
+    </widget>
+    
+    <widget>
+        <name>WLoad_MapName</name>
+        <type>textbox</type>
+        <size>230, 20</size>
+        <position>55, 120</position>
+        <text></text>
+    </widget>
+    
+    <widget>
+        <name>WLoad_LoadListVScrollbar</name>
+        <type>scrollbar</type>
+        <size>20, 100</size>
+        <position>268, 15</position>
+        <orientation>vertical</orientation>
+    </widget>
+    
+    <widget>
+        <name>WLoad_LoadList</name>
+        <type>listbox</type>
+        <size>210, 100</size>
+        <position>55, 15</position>
+        <scrollbar>WLoad_LoadListVScrollbar</scrollbar>
+    </widget>
+    
+    <widget>
+        <type>label</type>
+        <position>10, 25</position>
+        <text>Name:</text>
+    </widget>
+    
+</window>
+   
+   

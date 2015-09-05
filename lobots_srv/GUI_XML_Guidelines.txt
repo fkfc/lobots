@@ -1,0 +1,55 @@
+The whole XML file must begin and end with the "window" tag, as follows:
+<window>
+</window>
+
+
+widget tags (all widgets, including the main window, contain these):
+
+  <type>typename</type> Must be a valid type name. The main window doesn't need the "window" type specified, so this can be skipped
+
+  <position>X,Y</position> Integer coordinates
+
+  <size>Width,Height</size> Integer values
+
+  <name>StringName</name> Optional: Give a name to a widget, so you can find it later by calling Parent->GetChildByname(char*) or Display->GetWidgetByName(char*)
+
+  <widget> Add as many as needed, in order to add children widgets
+    ...
+  </widget>
+  
+  <style> Style section
+    ...
+  </style>
+  
+  
+  
+  
+window   <type>window</type>
+
+  Includes all property tags from widget type
+  
+  <draggable>true</draggable> boolean: "true"/"false", the default value is "true"
+
+  <style>
+     
+     <backgroundcolor>R,G,B</backgroundcolor> Red, Green, Blue integers from 0 to 255
+     <border>
+	<width>Width</width> Integer
+	<color>R,G,B</color> Integers 0..255
+	<radius>Radius</radius> Integer
+     </border>
+     
+     <selected> Same as the main style
+	<backgroundcolor>R,G,B</backgroundcolor> Red, Green, Blue integers from 0 to 255
+	<border>
+	    <width>Width</width> Integer
+	    <color>R,G,B</color> Integers 0..255
+	    <radius>Radius</radius> Integer
+	</border>
+     </selected>
+     
+  </style>
+     
+  
+    
+  
